@@ -1,37 +1,50 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.6;netstandard2.0;netstandard2.1;net6.0;net8.0;net9.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1;net6.0;net8.0;net9.0</TargetFrameworks>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Title>TTYPDB.NET</Title>
-    <Version>1.0.0-beta.1</Version>
-    <Authors>QingYi-Studio</Authors>
+    <Title>TYLDDB.NET</Title>
+    <Version>1.0.0-alpha.3p</Version>
+    <Authors>TYLDDB-Project</Authors>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageIcon>icon.png</PackageIcon>
     <RepositoryUrl>https://github.com/TYLDDB/TYLDDB-CSharp</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>ttypdb.qingyi-studio.top</PackageProjectUrl>
-    <Copyright>BSD 3-Clause License</Copyright>
+    <Copyright>BSD 3-Clause License (Modified)</Copyright>
     <Description>A strongly typed constrained distributed file system that can act as a database.</Description>
     <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <PackageTags>DataBase</PackageTags>
+    <Company>QingYi-Studio</Company>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReleaseNotes>Add a database parser (data type only, internal and distributed databases are not available).
+Fast cache underlying interface optimization.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="How-To-Use.md" />
     <None Remove="icon.png" />
+    <None Remove="LICENSE" />
+    <None Remove="LICENSE_CN" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="How-To-Use.md" />
     <Content Include="icon.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </Content>
+    <Content Include="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </Content>
+    <Content Include="LICENSE_CN" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\LICENSE">
+    <None Include="..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>

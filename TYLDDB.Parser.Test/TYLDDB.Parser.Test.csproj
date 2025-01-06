@@ -12,10 +12,4 @@
     <ProjectReference Include="..\TYLDDB\TYLDDB.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="example.lddb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>
