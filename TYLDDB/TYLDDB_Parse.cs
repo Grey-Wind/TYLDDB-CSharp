@@ -7,6 +7,14 @@ namespace TYLDDB
 {
     public partial class LDDB
     {
+#pragma warning disable CS0612 // 类型或成员已过时
+        /// <summary>
+        /// Reparse the entire database.<br />
+        /// 重新解析整个数据库。
+        /// </summary>
+        public void Parse() => Parse_V1();
+#pragma warning restore CS0612 // 类型或成员已过时
+
         /// <summary>
         /// Reparse the entire database.<br />
         /// 重新解析整个数据库。
